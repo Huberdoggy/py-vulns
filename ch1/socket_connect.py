@@ -17,7 +17,7 @@ def check_version(banner): # Simulate a fake vuln check if condition ID's banner
     match = pattern.search(banner)
     if match:
         print "[+] Match FOUND in provided banner: {}".format(match.group())
-        strip_reg = re.compile("[^2]")
+        strip_reg = re.compile("[^2]") # I just want to keep the '2'. Replace everything else with null
         new_pattern = strip_reg.sub("", banner)
         new_pattern = int(new_pattern)
         return new_pattern
