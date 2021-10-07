@@ -5,7 +5,7 @@ from urllib import urlopen
 
 def test_pass(crypt_pass, account_name):
     if account_name != str('root'):
-        salt = crypt_pass[:2]  # The first 2 chars in the encryped word we're feeding the function (corresponds to
+        salt = crypt_pass[:2]  # The first 2 chars in the encrypted word we're feeding the function (corresponds to
         # the field one from my fake /etc/shadow file. This param satisfies the default/weak Crypt.METHOD
         with open('dictionary.txt', 'r') as dictFile:
             for word in dictFile.readlines():

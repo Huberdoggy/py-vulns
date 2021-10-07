@@ -152,6 +152,9 @@ fabric.properties
 # Additional Defined by Kyle
 __init__.py
 dictionary.txt
+*.zip
+ACCESS*
+test_zipped*
 # For security purposes
 secrets.txt
 secrets.py
